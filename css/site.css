@@ -205,6 +205,13 @@ font-family: 'Work Sans', sans-serif;
 max-width: 250px;
 }
 
+.logo:hover{
+    transform: scale(120%);
+
+    transition:all .5s ease-in-out;
+    
+}
+
 
 .banner_centrado {
     margin: auto;
@@ -315,14 +322,19 @@ padding: 3em;
     color:#B32572;
 }
 
-.a_reservas:hover{
+.header .li.inicio.reserva.blanco:hover{
+    transform: scale(120%);
     color: none;
+    border: black ;
+
+    transition: all .5s ease-in-out;
 }
 
 .a_inicio:hover {    
-    color: black;
-}
+    transform: scale(120%);
 
+    transition: all .5s ease;
+}
 
 
 @media screen and (max-width: 960px) {
@@ -465,7 +477,7 @@ padding: 3em;
 
 
 .formulario {
-    margin: 5em 0;
+  margin: 3em 0;
 }
 
 .separador{
