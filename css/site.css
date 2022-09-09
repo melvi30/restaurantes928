@@ -32,8 +32,16 @@ font-family: 'Work Sans', sans-serif;
     }
 
   .h1.logo {
-    max-height: 80px;
+    max-height: 70px;
   }
+
+ @media screen and (max-width: 798px){
+    .h1.logo {
+        max-height: 50px;
+    }
+
+  }
+
   .h1.logo:hover{
     transform: none;
 }
@@ -41,18 +49,19 @@ font-family: 'Work Sans', sans-serif;
   .header .button {
     display: none;
     cursor: pointer;
+    background-color: transparent;
   }
   @media screen and (max-width: 798px) {
-    .header{
-        position: initial;
-    }
 
     .header .button {
       display: block;
+      z-index: 5;
     }
 
     .header.inicio{
-        position: initial;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
   }
@@ -85,8 +94,13 @@ font-family: 'Work Sans', sans-serif;
     }
     .header .nav.activo {
       opacity: 1;
-      min-height: 90vh;
+      min-height: 100vh;
       pointer-events: auto;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 4;
     }
 
   }
@@ -200,11 +214,11 @@ font-family: 'Work Sans', sans-serif;
 
 @media screen and (max-width: 960px){
     .box{
-        min-height: 44vh;
+        min-height: 50vh;
     }
 
     .box_izq{
-        min-height: 44vh;
+        min-height: 50vh;
     }
 }
 
@@ -255,6 +269,10 @@ padding: 3em;
     .centrado{
         width: 90%;
     }
+
+    .centrado.capital{
+        width: 85%;
+    }
 }
 
 .h2{
@@ -287,7 +305,8 @@ padding: 3em;
     background-color: black;
     width: 2px;
     height: 100px;
-    margin: auto;
+    margin: 2em auto;
+    
 }
 
 .espacio{
@@ -501,8 +520,15 @@ padding: 3em;
 }
 .p.contacto{
     margin-top: 2em;
-    margin-bottom: -2em;
+    margin-bottom: 2em;
     text-align: center;
+}
+
+p.reserva{
+   padding: 2em;
+    margin: auto;
+    text-align: center;
+
 }
 
 
