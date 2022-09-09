@@ -32,14 +32,17 @@ font-family: 'Work Sans', sans-serif;
     }
 
   .h1.logo {
-    width: 70px;
+    max-height: 80px;
   }
+  .h1.logo:hover{
+    transform: none;
+}
 
   .header .button {
     display: none;
     cursor: pointer;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 798px) {
     .header{
         position: initial;
     }
@@ -51,12 +54,13 @@ font-family: 'Work Sans', sans-serif;
     .header.inicio{
         position: initial;
     }
+
   }
   .header .svg {
     width: 2em;
     height: 2em;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 798px) {
     .header .nav {
         width: 100%;
       opacity: 0;
@@ -81,8 +85,7 @@ font-family: 'Work Sans', sans-serif;
     }
     .header .nav.activo {
       opacity: 1;
-      height: 50vh;
-      margin-top: 1em;
+      min-height: 90vh;
       pointer-events: auto;
     }
 
@@ -102,7 +105,7 @@ font-family: 'Work Sans', sans-serif;
         -ms-flex-align: center;
             align-items: center;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 798px) {
     .header .ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -135,7 +138,7 @@ font-family: 'Work Sans', sans-serif;
     padding: .5em;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 798px) {
     .header .li {
       margin: 1em 0;
       font-size: 1.8em;
@@ -152,9 +155,13 @@ font-family: 'Work Sans', sans-serif;
   }
 
   .a:hover {
-    color: #FFD912;
+    color: #FECE25;
 
     transition: all .3s ease;
+  }
+
+  .a-capital:hover{
+    color: #B32572;
   }
 
 .contenedor {
@@ -172,7 +179,7 @@ font-family: 'Work Sans', sans-serif;
     }
 }
 .box {
-    background-color: rgb(255, 255, 255);
+    background-color: #FECE25;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -182,7 +189,7 @@ font-family: 'Work Sans', sans-serif;
 }
 
 .box_izq{
-    background-color: #324E64;
+    background-color: #224058;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -203,6 +210,12 @@ font-family: 'Work Sans', sans-serif;
 
 .logo{
 max-width: 250px;
+}
+
+@media screen and (max-width: 960px){
+    .logo{
+        max-width: 200px;
+    }
 }
 
 .logo:hover{
@@ -253,7 +266,7 @@ padding: 3em;
 }
 
 .h2.capital{
-    color: #324E64;
+    color: #224058;
 }
 
 .h2_K{
@@ -282,7 +295,7 @@ padding: 3em;
 }
 .boton{
    width: 130px;
-    background-color: #FFD912;
+    background-color: #FECE25;
     margin: auto;
     text-transform: uppercase;
     text-align: center;

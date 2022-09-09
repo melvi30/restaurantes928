@@ -1,0 +1,87 @@
+.Galeria {
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.Galeria .Foto {
+  overflow: hidden;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Galeria .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Galeria .Foto:hover .img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ligthbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  pointer-events: none;
+}
+
+.ligthbox.activo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ligthbox .cerrar {
+  border: solid 0.11em black;
+  background-color: white;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+}
+
+.ligthbox .grande {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: 80vh;
+}
