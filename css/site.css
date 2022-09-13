@@ -135,9 +135,14 @@ font-family: 'Work Sans', sans-serif;
     }
 
 .header .li.inicio.reserva{
-    border: solid .5px black;
+    background-color: #FECE25;
     padding: .5em;
 
+}
+
+.header .li.inicio.reserva.capital{
+    background-color: #224058;
+    color: white;
 }
 
 .header .li.inicio.reserva:hover{
@@ -257,7 +262,7 @@ padding: 3em;
     margin: auto;
 }
 .centrado.capital{
-    width: 48%;
+    width: 54%;
     margin: auto;
 }
 
@@ -278,17 +283,18 @@ padding: 3em;
 .h2{
  text-align: center;
  font-size: 2.5em;
- font-family: 'Playfair Display', serif;
+ font-family: 'Impact';
  padding: .5em;
  font-weight: 400;
 }
 
 .h2.capital{
     color: #224058;
+
 }
 
 .h2_K{
-    font-style: italic;
+    
 }
 @media screen and (max-width: 960px) {
     .bloque1{
@@ -332,7 +338,7 @@ padding: 3em;
 }
 
 .a.capital{
-    background-color: #B32572;
+    background-color: #224058;
     color: white;
     width: 130px;
     margin: auto;
@@ -451,7 +457,7 @@ padding: 3em;
   }
 
 .footer{
-    margin: 5em 0;
+    margin: 5em 0 0 0;
 }
 .section1{
     width: 90%;
@@ -466,12 +472,12 @@ padding: 3em;
     .section1{
         flex-flow: column nowrap;
         text-align: center;
-        height: 80px;
+    
     }
 }
 
 .footer_box{
-    height: 100px;
+   
     
 }
 
@@ -529,6 +535,30 @@ p.reserva{
     margin: auto;
     text-align: center;
 
+}
+
+.section2{
+    width: 90%; 
+    margin: auto;
+    padding: 3em 0;
+    font-size: .8em;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_footer{
+    margin: 0 1em;
+}
+
+@media screen and (max-width: 960px){
+    .p_footer{
+        padding: 10px;
+        margin: 0;
+    }
 }
 
 
