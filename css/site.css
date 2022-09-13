@@ -35,23 +35,19 @@ font-family: 'Work Sans', sans-serif;
     max-height: 70px;
   }
 
- @media screen and (max-width: 798px){
+ @media screen and (max-width: 890px){
     .h1.logo {
-        max-height: 50px;
+        max-height: 40px;
     }
 
   }
-
-  .h1.logo:hover{
-    transform: none;
-}
 
   .header .button {
     display: none;
     cursor: pointer;
     background-color: transparent;
   }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 890px) {
 
     .header .button {
       display: block;
@@ -69,7 +65,7 @@ font-family: 'Work Sans', sans-serif;
     width: 2em;
     height: 2em;
   }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 890px) {
     .header .nav {
         width: 100%;
       opacity: 0;
@@ -119,7 +115,7 @@ font-family: 'Work Sans', sans-serif;
         -ms-flex-align: center;
             align-items: center;
   }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 890px) {
     .header .ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -157,7 +153,7 @@ font-family: 'Work Sans', sans-serif;
     padding: .5em;
   }
 
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 890px) {
     .header .li {
       margin: 1em 0;
       font-size: 1.8em;
