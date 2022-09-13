@@ -42,6 +42,10 @@ font-family: 'Work Sans', sans-serif;
 
   }
 
+  .h1.logo:hover{
+    transform: none;
+}
+
   .header .button {
     display: none;
     cursor: pointer;
@@ -507,6 +511,7 @@ padding: 3em;
 
 .footer_a {
     margin: 1em 0;
+    cursor: pointer;
 }
 
 
@@ -548,6 +553,7 @@ p.reserva{
 
 .p_footer{
     margin: 0 1em;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 960px){
@@ -556,5 +562,53 @@ p.reserva{
         margin: 0;
     }
 }
+.box_avisoLegal{
+    max-width: 90%;
+    margin: auto;
+}
 
+.aviso_contenedor{
+    margin: 3em 0;
+}
 
+.h3{
+    margin: 0 0 .5em 0;
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif';
+    font-size: 1.1em;
+
+}
+
+.paviso{
+    text-align: justify;
+}
+
+.aviso-li{
+    font-weight: 600;
+    margin-top: 1em;
+}
+.ul2{
+    margin: 1em 0;
+}
+
+.a.aviso{
+    margin: 1em 0;
+}
+
+.h4{
+    font-weight: 600;
+    font-size: 1.2;
+    margin: 1em 0;
+}
+
+.li_cookies{
+    margin: .5em 0;
+}
+
+.cookies-li{
+    font-weight: 600;
+}
+
+.a.cookies{
+    margin: none;
+    cursor: pointer;
+}
