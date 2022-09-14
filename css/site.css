@@ -37,6 +37,12 @@ font-family: 'Work Sans', sans-serif;
         color: white;
         text-transform: uppercase;
         position: absolute;
+        flex-flow: row nowrap;
+    }
+
+    .header.inicio.inicio{
+        width: 100%;
+        justify-content: flex-end;
     }
 
 
@@ -135,6 +141,16 @@ font-family: 'Work Sans', sans-serif;
           -ms-flex-direction: column;
               flex-direction: column;
     }
+
+    .header .li.inicio{
+        margin: 0 0 0 .5em;
+        padding: .2em;
+        color: white;
+    }
+
+    .header .a-inicio:hover{
+        color: black;
+    }
   }
   .header .li {
         margin: 0 0 0 3em;
@@ -180,7 +196,18 @@ font-family: 'Work Sans', sans-serif;
         border: solid black;
     }
 
+    .ul2{
+        display: flex;
+    }
+
+    .li.len{
+        margin:1em 0 0 1em;
+    }
+
+    
   }
+
+  
 
   .a:hover {
     color: #FECE25;
@@ -525,6 +552,9 @@ padding: 3em;
     cursor: pointer;
 }
 
+.footer_a.fab{
+    font-size: 1.5em;
+}
 
 .formulario {
   margin: 3em 0;
