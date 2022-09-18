@@ -41,7 +41,7 @@ font-family: 'Work Sans', sans-serif;
     }
 
     .header.inicio.inicio{
-        width: 100%;
+        width: 95%;
         justify-content: flex-end;
     }
 
@@ -144,14 +144,17 @@ font-family: 'Work Sans', sans-serif;
 
     .header .li.inicio{
         margin: 0 0 0 .5em;
-        padding: .2em;
+        padding: 1em;
         color: white;
     }
-
-    .header .a-inicio:hover{
-        color: black;
-    }
   }
+
+  .header .leng:visited{
+    border: solid 1px rgb(203, 10, 10);
+    padding: .2em;
+    transition: all .5s ease;
+    }   
+
   .header .li {
         margin: 0 0 0 3em;
         font-size: .88em;
@@ -204,10 +207,7 @@ font-family: 'Work Sans', sans-serif;
         margin:1em 0 0 1em;
     }
 
-    
   }
-
-  
 
   .a:hover {
     color: #FECE25;
